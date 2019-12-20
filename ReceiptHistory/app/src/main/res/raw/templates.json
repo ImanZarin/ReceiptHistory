@@ -1,0 +1,390 @@
+{
+  "SMS": [
+    {
+      "FinancialInstituteId": "27",
+      "IsDeposit": false,
+      "Pattern": ".*?(?<fiName>%s).*?%s.*?%s.*?(?<price>[\\d,]+).*?%s.*?(?<fiAccount>[\\d\\.]+).*?(?<dYear>\\d{2,4})/(?<dMonth>\\d{1,2})/(?<dDay>\\d{1,2}).*?(?<dHour>\\d{1,2}):(?<dMinute>\\d{1,2}):(?<dSecond>\\d{1,2}).*?",
+      "PatternParams" : [
+        "بانک آينده",
+        "برداشت",
+        "مبلغ",
+        "حساب"
+      ],
+      "PatternGroupsOrdered": [
+        "all",
+        "fiName",
+        "price",
+        "fiAccount",
+        "dYear",
+        "dMonth",
+        "dDay",
+        "dHour",
+        "dMinute",
+        "dSecond"
+      ]
+    },
+    {
+      "FinancialInstituteId": "27",
+      "IsDeposit": true,
+      "Pattern": ".*?(?<fiName>%s).*?%s.*?%s.*?(?<price>[\\d,]+).*?%s.*?(?<fiAccount>[\\d\\.]+).*?(?<dYear>\\d{2,4})/(?<dMonth>\\d{1,2})/(?<dDay>\\d{1,2}).*?(?<dHour>\\d{1,2}):(?<dMinute>\\d{1,2}):(?<dSecond>\\d{1,2}).*?",
+      "PatternParams" : [
+        "بانک آينده",
+        "واريز",
+        "مبلغ",
+        "حساب"
+      ],
+      "PatternGroupsOrdered": [
+        "all",
+        "fiName",
+        "price",
+        "fiAccount",
+        "dYear",
+        "dMonth",
+        "dDay",
+        "dHour",
+        "dMinute",
+        "dSecond"
+      ]
+    },
+
+    {
+      "FinancialInstituteId": "2",
+      "IsDeposit": false,
+      "Pattern": ".*?(?<fiName>%s).*?(?<price>[\\d,]+)%s.*?%s.*?(?<fiAccount>[\\d\\.]+).*?(?<dMonth>\\d{2})(?<dDay>\\d{2}).*?(?<dHour>\\d{1,2}):(?<dMinute>\\d{1,2}).*?",
+      "PatternParams" : [
+        "بانک ملي",
+        "-",
+        "حساب"
+      ],
+      "PatternGroupsOrdered": [
+        "all",
+        "fiName",
+        "price",
+        "fiAccount",
+        "dMonth",
+        "dDay",
+        "dHour",
+        "dMinute"
+      ]
+    },
+    {
+      "FinancialInstituteId": "2",
+      "IsDeposit": true,
+      "Pattern": ".*?(?<fiName>%s).*?(?<price>[\\d,]+)%s.*?%s.*?(?<fiAccount>[\\d\\.]+).*?(?<dMonth>\\d{2})(?<dDay>\\d{2}).*?(?<dHour>\\d{1,2}):(?<dMinute>\\d{1,2}).*?",
+      "PatternParams" : [
+        "بانک ملي",
+        "\\+",
+        "حساب"
+      ],
+      "PatternGroupsOrdered": [
+        "all",
+        "fiName",
+        "price",
+        "fiAccount",
+        "dMonth",
+        "dDay",
+        "dHour",
+        "dMinute"
+      ]
+    },
+
+    {
+      "FinancialInstituteId": "20",
+      "IsDeposit": false,
+      "Pattern": ".*?(?<fiName>%s).*?(?<price>[\\d,]+)%s.*?%s.*?(?<fiAccount>[\\d\\.]+).*?(?<dMonth>\\d{2})(?<dDay>\\d{2}).*?(?<dHour>\\d{1,2}):(?<dMinute>\\d{1,2}).*?",
+      "PatternParams" : [
+        "بانک صادرات",
+        "-",
+        "حساب"
+      ],
+      "PatternGroupsOrdered": [
+        "all",
+        "fiName",
+        "price",
+        "fiAccount",
+        "dMonth",
+        "dDay",
+        "dHour",
+        "dMinute"
+      ]
+    },
+    {
+      "FinancialInstituteId": "20",
+      "IsDeposit": true,
+      "Pattern": ".*?(?<fiName>%s).*?(?<price>[\\d,]+)%s.*?%s.*?(?<fiAccount>[\\d\\.]+).*?(?<dMonth>\\d{2})(?<dDay>\\d{2}).*?(?<dHour>\\d{1,2}):(?<dMinute>\\d{1,2}).*?",
+      "PatternParams" : [
+        "بانک صادرات",
+        "\\+",
+        "حساب"
+      ],
+      "PatternGroupsOrdered": [
+        "all",
+        "fiName",
+        "price",
+        "fiAccount",
+        "dMonth",
+        "dDay",
+        "dHour",
+        "dMinute"
+      ]
+    },
+
+    {
+      "FinancialInstituteId": "23",
+      "IsDeposit": false,
+      "Pattern": ".*?(?<fiName>%s).*?%s.*?(?<fiAccount>[\\d\\.]+).*?%s.*?(?<price>[\\d,]+).*?(?<dYear>\\d{2,4})/(?<dMonth>\\d{1,2})/(?<dDay>\\d{1,2}).*?(?<dHour>\\d{1,2}):(?<dMinute>\\d{1,2}).*?",
+      "PatternParams" : [
+        "\\*بانك گردشگری\\*",
+        "برداشت از",
+        "مبلغ"
+      ],
+      "PatternGroupsOrdered": [
+        "all",
+        "fiName",
+        "fiAccount",
+        "price",
+        "dYear",
+        "dMonth",
+        "dDay",
+        "dHour",
+        "dMinute"
+      ]
+    },
+    {
+      "FinancialInstituteId": "23",
+      "IsDeposit": true,
+      "Pattern": ".*?(?<fiName>%s).*?%s.*?(?<fiAccount>[\\d\\.]+).*?%s.*?(?<price>[\\d,]+).*?(?<dYear>\\d{2,4})/(?<dMonth>\\d{1,2})/(?<dDay>\\d{1,2}).*?(?<dHour>\\d{1,2}):(?<dMinute>\\d{1,2}).*?",
+      "PatternParams" : [
+        "\\*بانك گردشگری\\*",
+        "واريز به",
+        "مبلغ"
+      ],
+      "PatternGroupsOrdered": [
+        "all",
+        "fiName",
+        "fiAccount",
+        "price",
+        "dYear",
+        "dMonth",
+        "dDay",
+        "dHour",
+        "dMinute"
+      ]
+    },
+
+    {
+      "FinancialInstituteId": "11",
+      "IsDeposit": false,
+      "Pattern": ".*?(?<fiName>%s).*?%s.*?%s.*?(?<price>[\\d,]+).*?(?<fiAccount>[\\d\\-]+).*?(?<dYear>\\d{2,4})/(?<dMonth>\\d{1,2})/(?<dDay>\\d{1,2}).*?(?<dHour>\\d{1,2}):(?<dMinute>\\d{1,2}).*?",
+      "PatternParams" : [
+        "بانك سامان",
+        "برداشت",
+        "مبلغ"
+      ],
+      "PatternGroupsOrdered": [
+        "all",
+        "fiName",
+        "price",
+        "fiAccount",
+        "dYear",
+        "dMonth",
+        "dDay",
+        "dHour",
+        "dMinute"
+      ]
+    },
+    {
+      "FinancialInstituteId": "11",
+      "IsDeposit": false,
+      "Pattern": ".*?(?<fiName>%s).*?%s.*?%s.*?(?<price>[\\d,]+).*?(?<fiAccount>[\\d\\-]+).*?(?<dYear>\\d{2,4})/(?<dMonth>\\d{1,2})/(?<dDay>\\d{1,2}).*?(?<dHour>\\d{1,2}):(?<dMinute>\\d{1,2}).*?",
+      "PatternParams" : [
+        "بانك سامان",
+        "واريز",
+        "مبلغ"
+      ],
+      "PatternGroupsOrdered": [
+        "all",
+        "fiName",
+        "price",
+        "fiAccount",
+        "dYear",
+        "dMonth",
+        "dDay",
+        "dHour",
+        "dMinute"
+      ]
+    },
+
+    {
+      "FinancialInstituteId": "21",
+      "IsDeposit": false,
+      "Pattern": ".*?(?<fiName>%s).*?%s.*?(?<fiAccount>[\\d\\.]+).*?%s.*?(?<price>[\\d,]+).*?(?<dYear>\\d{2,4})/(?<dMonth>\\d{1,2})/(?<dDay>\\d{1,2}).*?(?<dHour>\\d{1,2}):(?<dMinute>\\d{1,2}).*?",
+      "PatternParams" : [
+        "بانک ملت",
+        "برداشت از حساب",
+        "مبلغ"
+      ],
+      "PatternGroupsOrdered": [
+        "all",
+        "fiName",
+        "fiAccount",
+        "price",
+        "dYear",
+        "dMonth",
+        "dDay",
+        "dHour",
+        "dMinute"
+      ]
+    },
+    {
+      "FinancialInstituteId": "21",
+      "IsDeposit": true,
+      "Pattern": ".*?(?<fiName>%s).*?%s.*?(?<fiAccount>[\\d\\.]+).*?%s.*?(?<price>[\\d,]+).*?(?<dYear>\\d{2,4})/(?<dMonth>\\d{1,2})/(?<dDay>\\d{1,2}).*?(?<dHour>\\d{1,2}):(?<dMinute>\\d{1,2}).*?",
+      "PatternParams" : [
+        "بانک ملت",
+        "واريز به حساب",
+        "مبلغ"
+      ],
+      "PatternGroupsOrdered": [
+        "all",
+        "fiName",
+        "fiAccount",
+        "price",
+        "dYear",
+        "dMonth",
+        "dDay",
+        "dHour",
+        "dMinute"
+      ]
+    },
+
+    {
+      "FinancialInstituteId": "8",
+      "IsDeposit": false,
+      "Pattern": ".*?(?<fiName>%s).*?%s.*?(?<fiAccount>[\\d\\-]+).*?%s.*?(?<price>[\\d,]+).*?(?<dYear>\\d{2,4})/(?<dMonth>\\d{1,2})/(?<dDay>\\d{1,2}).*?(?<dHour>\\d{1,2}):(?<dMinute>\\d{1,2}).*?",
+      "PatternParams" : [
+        "بانک اقتصادنوين",
+        "برداشت از",
+        ""
+      ],
+      "PatternGroupsOrdered": [
+        "all",
+        "fiName",
+        "fiAccount",
+        "price",
+        "dYear",
+        "dMonth",
+        "dDay",
+        "dHour",
+        "dMinute"
+      ]
+    },
+    {
+      "FinancialInstituteId": "8",
+      "IsDeposit": true,
+      "Pattern": ".*?(?<fiName>%s).*?%s.*?(?<fiAccount>[\\d\\-]+).*?%s.*?(?<price>[\\d,]+).*?(?<dYear>\\d{2,4})/(?<dMonth>\\d{1,2})/(?<dDay>\\d{1,2}).*?(?<dHour>\\d{1,2}):(?<dMinute>\\d{1,2}).*?",
+      "PatternParams" : [
+        "بانک اقتصادنوين",
+        "واريز به",
+        ""
+      ],
+      "PatternGroupsOrdered": [
+        "all",
+        "fiName",
+        "fiAccount",
+        "price",
+        "dYear",
+        "dMonth",
+        "dDay",
+        "dHour",
+        "dMinute"
+      ]
+    },
+
+    {
+      "FinancialInstituteId": "12",
+      "IsDeposit": false,
+      "Pattern": ".*?(?<fiName>%s).*?%s.*?(?<fiAccount>[\\d\\.]+).*?%s.*?(?<price>[\\d,]+).*?(?<dYear>\\d{2,4})/(?<dMonth>\\d{1,2})/(?<dDay>\\d{1,2}).*?(?<dHour>\\d{1,2}):(?<dMinute>\\d{1,2}).*?",
+      "PatternParams" : [
+        "\\*بانك پاسارگاد\\*",
+        "برداشت از",
+        "مبلغ"
+      ],
+      "PatternGroupsOrdered": [
+        "all",
+        "fiName",
+        "fiAccount",
+        "price",
+        "dYear",
+        "dMonth",
+        "dDay",
+        "dHour",
+        "dMinute"
+      ]
+    },
+    {
+      "FinancialInstituteId": "12",
+      "IsDeposit": true,
+      "Pattern": ".*?(?<fiName>%s).*?%s.*?(?<fiAccount>[\\d\\.]+).*?%s.*?(?<price>[\\d,]+).*?(?<dYear>\\d{2,4})/(?<dMonth>\\d{1,2})/(?<dDay>\\d{1,2}).*?(?<dHour>\\d{1,2}):(?<dMinute>\\d{1,2}).*?",
+      "PatternParams" : [
+        "\\*بانك پاسارگاد\\*",
+        "واريز به",
+        "مبلغ"
+      ],
+      "PatternGroupsOrdered": [
+        "all",
+        "fiName",
+        "fiAccount",
+        "price",
+        "dYear",
+        "dMonth",
+        "dDay",
+        "dHour",
+        "dMinute"
+      ]
+    },
+
+    {
+      "FinancialInstituteId": "1",
+      "IsDeposit": false,
+      "Pattern": ".*?(?<fiName>%s).*?%s.*?(?<fiAccount>[\\d\\.]+).*?%s.*?(?<price>[\\d,]+).*?(?<dYear>\\d{2,4})/(?<dMonth>\\d{1,2})/(?<dDay>\\d{1,2}).*?(?<dHour>\\d{1,2}):(?<dMinute>\\d{1,2}).*?",
+      "PatternParams" : [
+        "بانک قرض الحسنه رسالت",
+        "برداشت از",
+        "مبلغ"
+      ],
+      "PatternGroupsOrdered": [
+        "all",
+        "fiName",
+        "fiAccount",
+        "price",
+        "dYear",
+        "dMonth",
+        "dDay",
+        "dHour",
+        "dMinute"
+      ]
+    },
+    {
+      "FinancialInstituteId": "1",
+      "IsDeposit": true,
+      "Pattern": ".*?(?<fiName>%s).*?%s.*?(?<fiAccount>[\\d\\.]+).*?%s.*?(?<price>[\\d,]+).*?(?<dYear>\\d{2,4})/(?<dMonth>\\d{1,2})/(?<dDay>\\d{1,2}).*?(?<dHour>\\d{1,2}):(?<dMinute>\\d{1,2}).*?",
+      "PatternParams" : [
+        "بانک قرض الحسنه رسالت",
+        "واريز به",
+        "مبلغ"
+      ],
+      "PatternGroupsOrdered": [
+        "all",
+        "fiName",
+        "fiAccount",
+        "price",
+        "dYear",
+        "dMonth",
+        "dDay",
+        "dHour",
+        "dMinute"
+      ]
+    }
+  ]
+}

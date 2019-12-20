@@ -1,0 +1,101 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="@dimen/newTransaction_min_width"
+    android:layout_margin="@dimen/popup_margin"
+    tools:context="com.skywavestudios.receipthistory.AddTransaction_Fragment"
+    android:orientation="vertical">
+
+    <!-- TODO: Update blank fragment layout -->
+    <EditText
+        android:id="@+id/newtransaction_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/newtransaction_culomn_height"
+        android:layout_marginEnd="@dimen/main_side_margin"
+        android:layout_marginLeft="@dimen/main_side_margin"
+        android:layout_marginRight="@dimen/main_side_margin"
+        android:layout_marginStart="@dimen/main_side_margin"
+        android:layout_marginTop="@dimen/main_normal_margin"
+        android:hint="عنوان"
+        android:maxLines="1"
+        android:inputType="text"/>
+
+
+    <Spinner
+        android:id="@+id/newtransaction_bank"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/newtransaction_culomn_height"
+        android:layout_marginEnd="@dimen/main_side_margin"
+        android:layout_marginLeft="@dimen/main_side_margin"
+        android:layout_marginRight="@dimen/main_side_margin"
+        android:layout_marginStart="@dimen/main_side_margin"
+        android:layout_marginTop="@dimen/main_normal_margin"
+        android:spinnerMode="dropdown">
+
+    </Spinner>
+
+    <EditText
+        android:id="@+id/newtransaction_accountNO"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/newtransaction_culomn_height"
+        android:layout_marginEnd="@dimen/main_side_margin"
+        android:layout_marginLeft="@dimen/main_side_margin"
+        android:layout_marginRight="@dimen/main_side_margin"
+        android:layout_marginStart="@dimen/main_side_margin"
+        android:layout_marginTop="@dimen/main_normal_margin"
+        android:hint="شماره کارت"
+        android:inputType="number"
+        android:maxLines="1"/>
+
+
+    <EditText
+        android:id="@+id/newtransaction_date"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/newtransaction_culomn_height"
+        android:layout_marginEnd="@dimen/main_side_margin"
+        android:layout_marginLeft="@dimen/main_side_margin"
+        android:layout_marginRight="@dimen/main_side_margin"
+        android:layout_marginStart="@dimen/main_side_margin"
+        android:layout_marginTop="@dimen/main_normal_margin"
+        android:hint="تاریخ"
+        android:focusable="false"
+        android:inputType="date"/>
+
+    <Spinner
+        android:id="@+id/newtransaction_mode"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/newtransaction_culomn_height"
+        android:layout_marginEnd="@dimen/main_side_margin"
+        android:layout_marginLeft="@dimen/main_side_margin"
+        android:layout_marginRight="@dimen/main_side_margin"
+        android:layout_marginStart="@dimen/main_side_margin"
+        android:layout_marginTop="@dimen/main_normal_margin"
+        android:spinnerMode="dropdown">
+
+    </Spinner>
+
+    <EditText
+        android:id="@+id/newtransaction_cost"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/newtransaction_culomn_height"
+        android:layout_marginEnd="@dimen/main_side_margin"
+        android:layout_marginLeft="@dimen/main_side_margin"
+        android:layout_marginRight="@dimen/main_side_margin"
+        android:layout_marginStart="@dimen/main_side_margin"
+        android:layout_marginTop="@dimen/main_normal_margin"
+        android:hint="مبلغ"
+        android:inputType="number"
+        android:maxLines="1"/>
+
+    <Button
+        android:id="@+id/newtransaction_ok"
+        android:layout_width="@dimen/newtransaction_button_width"
+        android:layout_height="@dimen/newtransaction_button_height"
+        android:layout_margin="@dimen/main_side_margin"
+        android:text="تایید"
+        android:background="@color/colorPrimaryDark"
+        android:layout_gravity="center_horizontal"/>
+
+
+</LinearLayout>

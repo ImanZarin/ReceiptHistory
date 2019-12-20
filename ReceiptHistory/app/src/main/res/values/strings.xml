@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">اتوبانک</string>
+    <string name="action_settings">Settings</string>
+    <string name="notification_text">عنوان را اینجا وارد کنید</string>
+    <string name="notification_text2">اس ام اس بانکی</string>
+    <string name="notification_title">ثبت تراکنش</string>
+    <string name="notification_to_reply_text">ثبت با موفقیت انجام شد</string>
+    <string name="main_title_date">تاریخ</string>
+    <string name="main_title_title">عنوان</string>
+    <string name="main_title_bank">بانک</string>
+    <string name="main_title_cost">مبلغ(ریال)</string>
+    <string name="main_title_type">نوع</string>
+    <string name="popup_nullerror">اطلاعات وارد شده صحیح نمی باشد</string>
+    <string name="menu_all">همه</string>
+    <string name="mode_add">واریز</string>
+    <string name="mode_minus">برداشت</string>
+    <string name="receipt_remove">حذف</string>
+    <string name="receipt_confirm">تایید</string>
+    <string name="total_earn">جمع واریز</string>
+    <string name="total_paid">جمع برداشت</string>
+</resources>

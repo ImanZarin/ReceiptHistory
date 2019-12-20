@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/main_row_height"
+    android:layout_marginEnd="5dp"
+    android:layout_marginStart="5dp"
+    android:orientation="horizontal"
+    android:weightSum="10"
+    android:id="@+id/row_total"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/row_date"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:textAlignment="center"
+        android:layout_gravity="center_vertical"/>
+
+    <TextView
+        android:id="@+id/row_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:textAlignment="center"
+        android:layout_gravity="center_vertical"/>
+
+    <ImageView
+        android:id="@+id/row_bank"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/row_cost"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:textAlignment="center"
+        android:layout_gravity="center_vertical"
+        android:inputType="number"/>
+
+    <ImageView
+        android:id="@+id/row_updown"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/main_row_small_icon"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical"/>
+
+</android.support.v7.widget.LinearLayoutCompat>
